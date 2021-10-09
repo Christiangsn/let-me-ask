@@ -2,14 +2,14 @@ import { Link, useHistory } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
 // import { AuthContext } from '../contexts/AuthContext';
 // import { useContext } from 'react';
-import ilustrationImg from '../assets/images/illustration.svg';
-import logoImg from '../assets/images/logo.svg';
+import ilustrationImg from '../../assets/images/illustration.svg';
+import logoImg from '../../assets/images/logo.svg';
 
-import { Button } from '../components/Button';
+import { Button } from '../../components/Buttons';
 
-import '../styles/auth.scss';
-import { db } from '../services/firebase';
-import { useAuth } from '../hooks/useAuth';
+import './auth.scss';
+import { db } from '../../services/firebase';
+import { useAuth } from '../../hooks/useAuth';
 
 export function NewRoom() {
     const { user } = useAuth();
